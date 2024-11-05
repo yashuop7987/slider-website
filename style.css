@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  background-image: url(black-and-white-1920x1080-hd-bikes-zqc16xp91dv9uckg.jpg);
+}
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container h1 {
+  background-color: yellow;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  border-radius: 10px 20px 10px 20px;
+  border: 2px solid green;
+  backdrop-filter: blur(20px);
+}
+.gallery {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  width: 32%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  box-shadow: 0 0 25px #333;
+}
+
+.card :hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  height: 50%;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.container:hover h1 {
+  color: red;
+  transition: 0.3s;
+}
